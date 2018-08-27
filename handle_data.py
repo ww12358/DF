@@ -11,13 +11,11 @@ def handle_data():
         return str
 
     if request.method == 'GET':
-        return('<form id="tfnewsearch" method="post" action="/handle_data" > \
-		            <input type="text" class="tftextinput" name="symbol" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton"> \
-				    <input type="submit"> \
-		        </form>')
+        return render_template('query.html')
+
     else:
 #          return render_template('/static/index.html')
-        return "Nothing"
+        return "Oops! Something went wrong..."
 
 if __name__ == '__main__':
 	app.run(host="0.0.0.0", port=5000, debug=True,  use_debugger=True, use_reloader=False)
