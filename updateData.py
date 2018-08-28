@@ -157,14 +157,14 @@ def copyDataFromExl(symbol):
             print "dataframe is edited, just update dfo with df"
             # dfo.update(df)
             with pd.HDFStore(h5_path) as f:
-                df.to_hdf(f, '/' + symbol, format='table', append=False, data_columns=True, mode='a')
+                df.to_hdf(f, '/'+symbol, format='table', append=False, data_columns=True, mode='a')
                 f.flush()
                 f.close()
     else:
         if df_edit.equals(dfo):  # rows to be appended but previous data was not edited
             #        print "same dataframe, no data need to be edited"
             with pd.HDFStore(h5_path) as f:
-                df_new.to_hdf(f, '/' + symbol, format='table', append=True, data_columns=True, mode='a')
+                df_new.to_hdf(f, '/'+symbol, format='table', append=True, data_columns=True, mode='a')
                 print "rows to be appended but previous data was not edited"
                 f.flush()
                 f.close()
@@ -186,5 +186,5 @@ def copyDataFromExl(symbol):
                 f.close()
 
 updateDatetime('Date')
-#for symbol in symbol_collection:
-#    copyDataFromExl(symbol)
+for symbol in symbol_collection:
+    copyDataFromExl(symbol)

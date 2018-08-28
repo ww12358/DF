@@ -78,8 +78,19 @@ algricultural = ['A', 'M', 'Y', 'P', 'C', 'SR', 'CF', 'WH', 'OI', 'RM', ]
 
 equity = ['IF', 'IH', 'IC', 'TF']
 
+dce = ['PP', 'L', 'V', 'I', 'J', 'JM', 'A', 'M','Y', 'P', 'C']
+
+cze = ['SR', 'CF', 'WH', 'OI', 'RM', 'TA', 'ME', 'ZC']
+
+shfe = ['CU', 'AL', 'ZN', 'PB', 'RU', 'AU', 'AG', 'RB']
+
 symbol_d = {"FER":ferrous, "NON":nonferous, "CON":construction, "COA":coal,
             "GRA":grain, "FEE":feed, "SOY":soybean, "OIL":oil,
             "SOF":soft, "CHE":chemical, "IND":industrial, "EQU":equity,
-            "ALG":algricultural
+            "ALG":algricultural,
+            "DCE":dce, "CZE":cze, "SHF":shfe,
+            "CHN":c_idx
             }
+
+all_symbols = symbol_collection + symbol_d.keys()
+

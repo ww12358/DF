@@ -1,16 +1,31 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!doctype html>
+<html lang="en-US">
 <head>
-    <title>Title</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>Z-Creek Commodity Index</title>
+  <link rel="stylesheet" type="text/css" media="all" href="{{url_for('static', filename='styles/style.css')}}">
+  <script type="text/javascript" src={{url_for('static', filename="js/jquery-1.9.1.min.js")}}></script>
+  <script type="text/javascript" src={{url_for('static', filename="js/jquery.autocomplete.min.js")}}></script>
+  <script type="text/javascript" src={{url_for('static', filename="js/currency-autocomplete.js")}}></script>
 </head>
+
 <body>
-    <div id="tfheader">
-		<form id="tfnewsearch" method="post" action="/handle_data" >
-		        <input type="text" class="tftextinput" name="symbol" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
-				<input type="submit">
-		</form>
-	<div class="tfclear"></div>
-	</div>
+  <div id="topbar"><a href="http://www.creek2sea.net/handle_data">Z-Creek Commodity Index</a></div>
+  <div id="w">
+    <div id="content">
+      <h1>Chinese Commodity Indexes</h1>
+      <p>Just start typing a commodity symbol...</p>
+      <div id="searchfield" >
+        <form method="post" action="/handle_data">
+          <input type="text" name="symbol" class="biginput" id="autocomplete">
+          <input type="submit">
+        </form>
+      </div><!-- @end #searchfield -->
+      
+      <div id="outputbox">
+        <p id="outputcontent">Choose a symbol and the chart will display.</p>
+      </div>
+    </div><!-- @end #content -->
+  </div><!-- @end #w -->
 </body>
 </html>
