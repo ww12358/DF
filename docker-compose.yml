@@ -7,17 +7,19 @@ services:
    expose:
      - "8000"
    volumes:
-     - /usr/src/app/creek/static
-   command: /usr/local/bin/gunicorn -w 2 -b :8000 creek:app
+     - /usr/src/app/creek/static/
+   command: gunicorn --pythonpath=/usr/src/app/creek/ app:app -w 2 -b 0.0.0.0:8000
 
 
  nginx:
    restart: always
    build: ./nginx
+   expose:
+      - "80"
    ports:
      - "80:80"
    volumes:
-     - /var/www/html
+     - /usr/src/app/creek/static/
    volumes_from:
      - web
    depends_on:

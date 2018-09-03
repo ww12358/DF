@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Bokeh includes-->
+    <link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.css" type="text/css" />
+    <script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.js">
+    </script>
+  </head>
+  <body>
+    <div>
+        <h1>Z-Creek Index - 之江商品指数 -</h1>
+        <form action="/handle_data" method="get">
+          <select name="current_symbol">
+        	{% for symbol in symbol_collection %}
+             	{% if symbol == current_symbol %}
+		           	<option selected value="{{ symbol }}">{{ symbol }}</option>
+                {% else %}
+		        	<option value="{{ symbol }}">{{ symbol }}</option>
+                {% endif %}
+        	{% endfor %}
+          </select>
+        <input type="submit">
+        </form>
+        {% block body %}
+        {% endblock %}
+    </div>
+  </body>
+</html>

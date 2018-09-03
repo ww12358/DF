@@ -1,0 +1,45 @@
+2018-08-27 12:31:49,036 ERROR Failed to read excel or h5: 'NoneType' object has no attribute 'dtypes'
+2018-08-27 13:01:47,106 INFO Date_time already is updated!
+2018-08-27 13:02:24,085 INFO Date_time already is updated!
+2018-08-27 13:07:10,618 INFO Date_time already is updated!
+2018-08-27 14:10:34,393 INFO Date_time already is updated!
+2018-08-27 14:15:34,370 INFO Date_time already is updated!
+2018-08-27 14:17:12,733 INFO Date_time already is updated!
+2018-08-27 14:46:10,099 INFO Date_time already is updated!
+2018-08-27 15:14:30,974 ERROR Failed to read excel or h5: mode a+ is not allowed while performing a read. Allowed modes are r, r+ and a.
+2018-08-27 15:15:46,794 ERROR Failed to read excel or h5: The HDFStore must be open for reading.
+2018-08-27 15:23:46,181 ERROR Failed to read excel or h5: global name 'grp_dtypes' is not defined
+2018-08-27 15:24:35,513 ERROR Failed to read excel or h5: global name 'grp_dtypes' is not defined
+2018-08-27 15:25:24,023 ERROR Failed to read excel or h5: global name 'grp_dtypes' is not defined
+2018-08-27 15:25:37,281 ERROR Failed to read excel or h5: global name 'grp_dtypes' is not defined
+2018-08-27 15:41:57,516 ERROR Failed to read excel or h5: HDF5 error back trace
+
+  File "H5F.c", line 586, in H5Fopen
+    unable to open file
+  File "H5Fint.c", line 1305, in H5F_open
+    unable to lock the file
+  File "H5FD.c", line 1839, in H5FD_lock
+    driver lock request failed
+  File "H5FDsec2.c", line 940, in H5FD_sec2_lock
+    unable to lock file, errno = 11, error message = 'Resource temporarily unavailable'
+
+End of HDF5 error back trace
+
+Unable to open/create file './data/creekIDX.hdf5'
+2018-08-27 16:00:19,440 INFO Date_time already is updated!
+2018-08-27 16:15:28,013 INFO Date_time already is updated!
+2018-08-27 16:30:00,984 INFO Date_time already is updated!
+2018-08-27 16:30:37,388 INFO Date_time already is updated!
+2018-08-27 20:26:24,566 INFO Date_time already is updated!
+2018-08-27 20:29:56,744 INFO Date_time already is updated!
+2018-08-27 20:36:16,645 INFO Date_time already is updated!
+2018-08-27 20:39:39,508 INFO Date_time already is updated!
+2018-08-27 20:48:14,455 INFO Date_time already is updated!
+2018-08-27 20:59:48,475 INFO Date_time already is updated!
+2018-08-27 21:03:38,770 INFO Date_time already is updated!
+2018-08-27 21:16:35,744 INFO Date_time already is updated!
+2018-08-27 21:17:44,671 INFO Date_time already is updated!
+2018-08-27 21:29:37,458 ERROR Failed to read excel or h5: merge() got an unexpected keyword argument 'lefe_index'
+2018-08-28 12:22:26,080 INFO Date_time already is updated!
+2018-08-29 23:07:55,876 INFO Date_time already is updated!
+2018-08-29 23:16:08,203 INFO Date_time already is updated!
