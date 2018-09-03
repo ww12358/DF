@@ -1,0 +1,26 @@
+version: '2'
+
+services:
+ web:
+   restart: always
+   build: ./web
+   expose:
+     - "8000"
+   volumes:
+     - /usr/src/app/creek/static
+   command: /usr/local/bin/gunicorn -w 2 -b :8000 creek:app
+
+
+ nginx:
+   restart: always
+   build: ./nginx
+   ports:
+     - "80:80"
+   volumes:
+     - /var/www/html
+   volumes_from:
+     - web
+   depends_on:
+     - web
+
+
