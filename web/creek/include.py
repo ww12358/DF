@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 
-excel_path = '/home/sean/Nutstore/DY强弱记录(2018).xlsm'
-h5_path = './creek/data/creekIDX.hdf5'
+excel_path = '/usr/src/app/creek/data/DY强弱记录(2018).xlsm'
+h5_path = '/usr/src/app/creek/data/creekIDX.hdf5'
 
 dtypes = {
         'Date_time':'datetime64[ns]',
@@ -38,21 +38,21 @@ headers = ['Date_time', 'st_dn','sw_dn','tr_dn','st','sw','tr','total','st_pct',
 
 
 symbol_collection=[
-                   'A','M','Y', 'P', 'C', #'JD',
+                   'A','M','Y', 'P', 'C', 'JD',
                    'SR', 'CF', 'WH', 'OI', 'RM',  'RS', 'RI',
                    'CU', 'AL', 'ZN', 'PB', 'RU', 'AU', 'AG', 'RB',
                    'TA', 'ME', 'ZC', 'FG',
                    'PP', 'L', 'V', 'I', 'J', 'JM',
                    'IF', 'IH', 'IC', 'TF'
-                   ]        #31 symbols
+                   ]        #35 symbols correspondent to excel
 
 c_idx = ['A', 'M', 'Y', 'P', 'C',
         'SR', 'CF', 'WH', 'OI', 'RM',
         'CU', 'AL', 'ZN', 'PB', 'RU', 'AU', 'AG', 'RB',
         'TA', 'ME', 'ZC',
-        'PP', 'L', 'V', 'I', 'J', 'JM']
+        'PP', 'L', 'V', 'I', 'J', 'JM']         #'CHN'
 
-ferrous = ['RB', 'I', 'J']
+ferrous = ['RB', 'I', 'J']          #'FER'
 
 nonferous = ['CU', 'AL', 'ZN', 'PB']
 

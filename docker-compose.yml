@@ -4,16 +4,19 @@ services:
  web:
    restart: always
    build: ./web
+   image: ww12358/dy_web:release01
    expose:
      - "8000"
    volumes:
      - /usr/src/app/creek/static/
+     - /home/sean/Nutstore/excels:/usr/src/app/creek/data
    command: gunicorn --pythonpath=/usr/src/app/creek/ app:app -w 2 -b 0.0.0.0:8000
 
 
  nginx:
    restart: always
    build: ./nginx
+   image: ww12358/dy_nginx:release02
    expose:
       - "80"
    ports:

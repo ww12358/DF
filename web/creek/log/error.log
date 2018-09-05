@@ -43,3 +43,48 @@ Unable to open/create file './data/creekIDX.hdf5'
 2018-08-28 12:22:26,080 INFO Date_time already is updated!
 2018-08-29 23:07:55,876 INFO Date_time already is updated!
 2018-08-29 23:16:08,203 INFO Date_time already is updated!
+2018-09-04 14:39:45,310 ERROR Failed to read excel or h5: [Errno 2] No such file or directory: '/usr/src/app/creek/data/DY\xe5\xbc\xba\xe5\xbc\xb1\xe8\xae\xb0\xe5\xbd\x95(2018).xlsm'
+2018-09-04 15:26:52,617 ERROR Failed to read excel or h5: HDF5 error back trace
+
+  File "H5F.c", line 586, in H5Fopen
+    unable to open file
+  File "H5Fint.c", line 1305, in H5F_open
+    unable to lock the file
+  File "H5FD.c", line 1839, in H5FD_lock
+    driver lock request failed
+  File "H5FDsec2.c", line 940, in H5FD_sec2_lock
+    unable to lock file, errno = 11, error message = 'Resource temporarily unavailable'
+
+End of HDF5 error back trace
+
+Unable to open/create file '/usr/src/app/creek/data/creekIDX.hdf5'
+2018-09-04 15:32:34,680 ERROR Failed to read excel or h5: ``/usr/src/app/creek/data/creekIDX.hdf5`` does not exist
+2018-09-04 15:35:00,769 ERROR Failed to read excel or h5: ``/usr/src/app/creek/data/creekIDX.hdf5`` does not exist
+2018-09-04 15:39:25,218 ERROR Failed to read excel or h5: ``/usr/src/app/creek/data/creekIDX.hdf5`` does not exist
+2018-09-04 15:41:40,163 ERROR Failed to read excel or h5: ``/usr/src/app/creek/data/creekIDX.hdf5`` does not exist
+2018-09-04 22:44:51,555 ERROR Failed to read excel or h5: ``/usr/src/app/creek/data/creekIDX.hdf5`` does not exist
+2018-09-04 22:50:42,966 INFO Date_time already is updated!
+2018-09-05 08:59:14,589 ERROR Failed to read excel or h5: Length mismatch: Expected axis has 1 elements, new values have 13 elements
+2018-09-05 09:14:11,933 ERROR Failed to read excel or h5: Length mismatch: Expected axis has 1 elements, new values have 12 elements
+2018-09-05 09:33:48,256 ERROR Failed to read excel or h5: 'list' object is not callable
+2018-09-05 09:43:42,928 ERROR Failed to read excel or h5: 'list' object is not callable
+2018-09-05 09:47:29,579 ERROR Failed to read excel or h5: 'list' object is not callable
+2018-09-05 09:54:38,171 ERROR Failed to read excel or h5: 'Only a column name can be used for the key in a dtype mappings argument.'
+2018-09-05 09:58:04,240 ERROR Failed to read excel or h5: 'Only a column name can be used for the key in a dtype mappings argument.'
+2018-09-05 10:07:25,338 INFO Date_time already is updated!
+2018-09-05 10:08:45,641 ERROR Failed to read excel or h5: 'symbol'
+2018-09-05 10:11:45,637 ERROR Failed to read excel or h5: 'symbol'
+2018-09-05 10:32:07,687 ERROR Failed to read excel or h5: 'symbol'
+2018-09-05 10:35:01,324 ERROR Failed to read excel or h5: 'symbol'
+2018-09-05 10:40:56,299 INFO Date_time already is updated!
+2018-09-05 12:30:41,069 ERROR Failed to read excel or h5: copyDataFromExl() takes exactly 2 arguments (3 given)
+2018-09-05 12:33:44,992 ERROR Failed to read excel or h5: copyDataFromExl() takes exactly 2 arguments (3 given)
+2018-09-05 12:34:50,216 INFO Date_time already is updated!
+2018-09-05 12:36:26,888 INFO Date_time already is updated!
+2018-09-05 15:08:13,710 INFO Date_time already is updated!
+2018-09-05 15:18:25,381 INFO Date_time already is updated!
+2018-09-05 15:19:59,404 INFO Date_time already is updated!
+2018-09-05 16:14:23,849 INFO Date_time already is updated!
+2018-09-05 16:16:16,134 INFO Date_time already is updated!
+2018-09-05 16:17:13,447 INFO Date_time already is updated!
+2018-09-05 16:20:45,637 INFO Date_time already is updated!

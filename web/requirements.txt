@@ -2,3 +2,5 @@ Flask==0.12.2
 bokeh==0.12.7
 pandas==0.23
 gunicorn==19.8.1
+colorama==0.3.9
+xlrd==1.1.0
