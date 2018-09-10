@@ -1,14 +1,9 @@
-# coding: utf-8
+# -*- coding:utf-8 -*-
 
-# In[ ]:
-
-
-import numpy as np
 import pandas as pd
-from pandas.testing import assert_frame_equal
 import sys
 import colorama
-from include import symbol_collection, excel_path, h5_path, headers, dtypes
+from include import excel_path, h5_path, headers, dtypes
 from logErr import logger
 
 

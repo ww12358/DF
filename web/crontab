@@ -1,0 +1,4 @@
+#* * * * * root echo "Hello world" >> /usr/src/app/creek/data/log/dy.log 2>&1
+48 8,10,11,13,14,22,23 * * 1,2,3,4,5 root /usr/local/bin/python /usr/src/app/creek/updateAllSmbl.py >> /usr/src/app/creek/data/log/dy.log 2>&1 && /usr/local/bin/python /usr/src/app/creek/combineGrpSymbol.py >> /usr/src/app/creek/data/log/dy.log 2>&1
+17 9,11,13,14,15,21,22,23 * * 1,2,3,4,5 root /usr/local/bin/python /usr/src/app/creek/updateAllSmbl.py >> /usr/src/app/creek/data/log/dy.log 2>&1 && /usr/local/bin/python /usr/src/app/creek/combineGrpSymbol.py >> /usr/src/app/creek/data/log/dy.log 2>&1
+# An empty line is required at the end of this file for a valid cron file.

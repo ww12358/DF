@@ -8,9 +8,11 @@ services:
    expose:
      - "8000"
    volumes:
-     - /usr/src/app/creek/static/
+     - /usr/src/app/creek
      - /home/sean/Nutstore/excels:/usr/src/app/creek/data
-   command: gunicorn --pythonpath=/usr/src/app/creek/ app:app -w 2 -b 0.0.0.0:8000
+   command: >
+      bash -c "gunicorn --pythonpath=/usr/src/app/creek/ app:app -w 2 -b 0.0.0.0:8000
+      | /usr/sbin/cron && tail -f /usr/src/app/creek/data/log/dy.log"
 
 
  nginx:
